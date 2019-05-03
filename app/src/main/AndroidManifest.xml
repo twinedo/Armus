@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.armusat_taubah">
+
+    <application
+        android:allowBackup="true"
+
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".MainActivity">
+        </activity>
+        <activity
+            android:label="Catatan"
+            android:name=".catatan.ActCatatan">
+            </activity>
+        <activity
+            android:label="Catatan"
+            android:name=".catatan.ActCatatanTodo">
+        </activity>
+        <activity
+            android:label="@string/title1.1"
+            android:name=".catatan.ActCatatanShow">
+        </activity>
+
+        <activity
+            android:label="@string/title2"
+            android:name=".ActJadwal">
+        </activity>
+        <activity
+            android:label="@string/title3.1"
+            android:name=".ActPenanda">
+           </activity>
+        <activity
+            android:label="@string/title4"
+            android:name=".ActTentang"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog">
+        </activity>
+
+    </application>
+
+</manifest>

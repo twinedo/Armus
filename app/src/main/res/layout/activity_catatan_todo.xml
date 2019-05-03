@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:id="@+id/relative1">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/line1">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ctt_judul"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_margin="10dp"
+            android:textColor="@color/birumuda" />
+
+        <EditText
+            android:id="@+id/deskJudul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Isi Judul"
+            android:layout_margin="10dp"
+            android:lines="2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Catat:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_margin="10dp"
+            android:textColor="@color/birumuda" />
+        <EditText
+            android:id="@+id/deskIsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Mulai Mencatat..."
+            android:lines="3" />
+        <Button
+            android:id="@+id/cttSimpan"
+            android:text="@string/ctt_simpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deskCtt"
+            android:padding="20dp"
+            android:onClick="doneClicked"
+            android:background="@color/birumuda"
+            android:textColor="@color/putih"
+            android:layout_margin="10dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</RelativeLayout>
+
